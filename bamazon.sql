@@ -1,13 +1,13 @@
--- Drops the programming_db if it already exists --
+-- Drops the bamazon database if it already exists --
 DROP DATABASE IF EXISTS bamazon;
 
--- Created the DB "wizard_schools_db" (only works on local connections)
+-- Created the DB "bamazon"
 CREATE DATABASE bamazon;
 
--- Use the DB wizard_schools_db for all the rest of the script
+-- Use the DB bamazon for all the rest of the script
 USE bamazon;
 
--- Creating the table
+-- Creating the "products" table
 create table products(
 	itemid integer auto_increment not null,
     productname varchar(45) not null,
